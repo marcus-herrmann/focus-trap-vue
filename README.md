@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-npm install focus-trap focus-trap-vue
+npm install focus-trap focus-trap-vue@3.1.0
 ```
 
 ## Usage
@@ -15,9 +15,12 @@ This library exports one single named export `FocusTrap` and **requires
 dependency**. So you can locally import the component or declare it globally:
 
 ```js
+import { createApp } from 'vue'
 import { FocusTrap } from 'focus-trap-vue'
+import App from "./App.vue"
 
-Vue.component('FocusTrap', FocusTrap)
+const app = createApp(App)
+app.component('FocusTrap', FocusTrap)
 ```
 
 `FocusTrap` can be controlled in three different ways:
